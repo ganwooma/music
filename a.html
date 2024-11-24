@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>음악 수행</title>
+    <script>
+        function goToRandomLink() {
+            // 링크 목록
+            const links = [
+                "https://drive.google.com/file/d/1t5uY9vG_pTpJ1Nnu91JiMHo4pXqi4jhW/view?usp=classroom_web&authuser=1",
+                "https://drive.google.com/file/d/177uOsDHmkO4HyejgJs5vA7JpIA_ppB8t/view?usp=classroom_web&authuser=1",
+                "https://drive.google.com/file/d/1_XRxIsABhsn9fn81ryz6p-rIN-z38BAB/view?usp=classroom_web&authuser=1",
+                "https://drive.google.com/file/d/1Ebltv4qD4D4ljJ-7uEp9MuxjgWEY6Pbg/view?usp=classroom_web&authuser=1",
+                "https://drive.google.com/file/d/1Q7O19zZy0BeLWJyL2AWZtMOKeMZeBgra/view?usp=classroom_web&authuser=1",
+                "https://drive.google.com/file/d/1PqCMcDp502ngro0zr8NI-DdSu03Y7XSS/view?usp=classroom_web&authuser=1",
+                "https://drive.google.com/file/d/1eZVvbddXy6iG7in3t-OLFuOLJT85jy7X/view?usp=classroom_web&authuser=1",
+                "https://drive.google.com/file/d/15g6TU7NEmbc43I19e-UddwPSk8WmHruU/view?usp=classroom_web&authuser=1",
+                "https://drive.google.com/file/d/1Ubr7s2rWVh_W-dhnCtJfC1BLw_DW86pD/view?usp=classroom_web&authuser=1",
+                "https://drive.google.com/file/d/1MFcJY4itDN9c0zHoac-2hosVnoYLFcnu/view?usp=classroom_web&authuser=1",
+                "https://drive.google.com/file/d/1AJnEGfpOS--YC_TNCKVv16-qC7aO21Ov/view?usp=classroom_web&authuser=1",
+                "https://drive.google.com/file/d/1jTW77dvVoX0hXRQBo7wRR3jcK3HbZIlM/view?usp=classroom_web&authuser=1",
+                "https://drive.google.com/file/d/11d79UZNa4HLULMd8z_du-FW6MwDSHg8b/view?usp=classroom_web&authuser=1",
+                "https://drive.google.com/file/d/1f85IdKNF47A6kSCD5-93DHrD21ovpDy-/view?usp=classroom_web&authuser=1",
+                "https://drive.google.com/file/d/1CI1eYUok51HqqhPfcvx2Iu6SyJ-0p7K6/view?usp=classroom_web&authuser=1",
+                "https://drive.google.com/file/d/1iDNLK9p1D6iwACZWPHcGZ85ErdE-j4Av/view?usp=classroom_web&authuser=1",
+                "https://drive.google.com/file/d/1Kol5D5-8_CGqizMU4OkE3iUv1RnjvXMd/view?usp=classroom_web&authuser=1",
+                "https://drive.google.com/file/d/17dlX9cbgDXRO0nmiOpVF7JA9hkcgI3oU/view?usp=classroom_web&authuser=1"
+            ];
+            
+            // 랜덤으로 링크 선택
+            const randomIndex = Math.floor(Math.random() * links.length);
+            const randomLink = links[randomIndex];
+            
+            // 선택된 링크로 이동
+            window.location.href = randomLink;
+        }
+    </script>
+</head>
+<body>
+    <h1>랜덤 링크로 이동하기</h1>
+    <button onclick="goToRandomLink()">눌러서 랜덤 링크로 이동</button>
+</body>
+</html>
